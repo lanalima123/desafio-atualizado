@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="imagens/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <main class="main__container">
+        <header class="cabecalho"><img src="imagens/icon.jpg" alt="logo lana">
+            <h1>Bem-vindo ao mundo da criptografia</h1></header>
+        <div class="container__input">
+            <div class="input">
+                <textarea id="input__texto" placeholder="Digite o seu texto aqui!" ></textarea>
+                <p>Atenção: Apenas letras maiúsculas e sem acento.</p>
+            </div>
+            <div id="output">
+                <img src="imagens/reslt.jpg" alt="menina robo">
+                <h2 >Sua mensagem será exibida aqui!</h2>
+                <button onclick="copiarTexto()" >Copiar texto</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="container__btn">
+                <button onclick="cripto()" class="btn_cripto" id="">Cripotgrafar</button>
+                <button onclick="descripto()" class="btn_descripto"> Descriptografar</button>
+
+            </div>
+
+        </div>
+
+        
+    </main>
+    <footer></footer>
+
+    <script src="linguagemJS/linguagem.js"></script>
+    
+</body>
+</html>
