@@ -15,5 +15,6 @@ function descripto(){
 } 
 
 function copiarTexto(){
-    document.querySelector(textarea).innerHTML = ' '
-}
+    let textoCopy= document.getElementById('copia').innerHTML;
+    navigator.clipboard.writeText(textoCopy)
+    alert('texto copiado')}
