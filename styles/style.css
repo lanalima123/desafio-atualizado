@@ -7,12 +7,13 @@ body{
 .main__container{
     background-color: #121212;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     margin: 0;
     height: 100vh;
     width: 100vw;
-    box-sizing: content-box;
+ 
+
 
 }
 .main__container .cabecalho{
@@ -43,9 +44,10 @@ body{
 .main__container .container__input{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     color: #fff;
     margin: 8px;
+    height: 350px;
     
 }
 
@@ -57,6 +59,8 @@ body{
     border: none;
     border-radius: 20PX;
     margin: 12px;
+    padding: 20px;
+    width: 300px;
 
 }
  .input #input__texto{
@@ -69,8 +73,8 @@ body{
     text-overflow: ellipsis;
     overflow:hidden;
     white-space: nowrap;
-    width: 350px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -82,17 +86,54 @@ body{
 }
 .main__container .container__input #output{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 12px;
 
 }
 .main__container .container__input #output img{
     border-radius: 20px;
-    width:350px;
-    height: 300px;
+    width:250px;
+    height: 200px;
+    padding: 12px;
 
 }
+.container__btn{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-left: 140px;
+    
+    
+
+}
+.btn_descripto , .btn_cripto , .copy{
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    border-radius: 30%;
+    background-color: #242424;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px;
+    border-style:solid;
+    border-color: #232323;
+
+
+    
+}
+
+
+.copy{
+    background-color: #121212;
+}
+#copia{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    }
+
 @media screen and (max-width: 768px) {
     .main__container{
         display: block;
@@ -100,7 +141,19 @@ body{
     .main__container .container__input #output img{
         border-radius: 20px;
         width: 100px;
-        height: 75px;}
+        height: 75px;
+        padding-bottom: 2px;}
+
+        #copia{
+        width: 200px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+       
+        }
+        
     .main__container .container__input{
             display: block;
             justify-content: space-between;
@@ -110,21 +163,10 @@ body{
             margin: 0;
     }
     .input #input__texto{
-        background: transparent;
-        text-decoration: none;
-        text-transform: none;
-        border: none;
-        padding: 18px 100px 0px 18px;
-        outline: none;
-        text-overflow: ellipsis;
-        overflow:hidden;
-        white-space: nowrap;
+     
         width: 100px;
-        height: 75px;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 600;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        height: 130px;
+    }
         .cabecalho img{
             border: none;
             border-radius: 50%;
@@ -141,5 +183,41 @@ body{
             color: #fff;
             height: 50px; }  
         .cabecalho h1{
-            margin-right: 20px;}   
+            margin-right: 20px;  
 }
+.main__container .container__input{
+    display: block;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    padding-left: 40px;
+}
+    .input , .main__container .container__input #output{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #232323;
+        border: none;
+        border-radius: 20PX;
+        margin: 12px;
+        padding: 20px;}
+        .container__btn{
+            display: flex;
+            justify-content: space-around;
+            margin: 15PX;
+            padding: 0;
+            padding-left: 25px;
+           
+            
+
+            
+            
+        
+        }
+        .btn_descripto , .btn_cripto , .copy{
+            padding: 12px;
+            
+        }
+        
+            
+    }
