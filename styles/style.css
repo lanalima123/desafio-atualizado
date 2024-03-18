@@ -43,15 +43,15 @@ body{
 }
 .main__container .container__input{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 5px;
     color: #fff;
     margin: 8px;
-    height: 350px;
+    height: 400px;
     
 }
 
-.main__container .container__input .input, .main__container .container__input #output{
+.input, .main__container .container__input #output{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -96,11 +96,11 @@ body{
     padding: 12px;
 
 }
-.container__btn{
+.main__container .container__btn{
     display: flex;
-    justify-content: space-between;
-    padding-right: 140px;
-    padding-left: 140px;
+    justify-content: space-evenly;
+    gap: 120px;
+
     
     
 
@@ -122,11 +122,12 @@ body{
 }
 
 
+
 .copy{
     background-color: #121212;
 }
 #copia{
-    width: 250px;
+    width: 50%;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -158,15 +159,17 @@ body{
             display: block;
             justify-content: space-between;
         
-            padding: 20px;
+            padding: 2px;
             color: #fff;
             margin: 0;
     }
-    .input #input__texto{
-     
-        width: 100px;
-        height: 130px;
+    
+   .input #input__texto{
+        width: 20%;
+        padding: 10px 100px 0px 10px
     }
+        
+
         .cabecalho img{
             border: none;
             border-radius: 50%;
@@ -185,28 +188,38 @@ body{
         .cabecalho h1{
             margin-right: 20px;  
 }
+.main__container {
+
+    
+    margin: 0;
+
+}
 .main__container .container__input{
     display: block;
     align-items: center;
-    width: 300px;
-    height: 500px;
-    padding-left: 40px;
+    width: 80%;
+    height: 70%;
+    padding: 5px;
+    margin-left: 20px;
+    
 }
     .input , .main__container .container__input #output{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         background-color: #232323;
         border: none;
         border-radius: 20PX;
-        margin: 12px;
-        padding: 20px;}
-        .container__btn{
+        width: 80%;
+        height: 40%;
+        padding: 15px;}
+    .main__container .container__btn{
             display: flex;
-            justify-content: space-around;
-            margin: 15PX;
+            justify-content: center;
+            gap: 5%;
+            margin: 25PX;
             padding: 0;
-            padding-left: 25px;
+           
            
             
 
@@ -214,7 +227,7 @@ body{
             
         
         }
-        .btn_descripto , .btn_cripto , .copy{
+        .btn_descripto ,  .btn_cripto , .copy{
             padding: 12px;
             
         }
