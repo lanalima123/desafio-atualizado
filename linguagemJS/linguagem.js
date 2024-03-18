@@ -15,6 +15,8 @@ function descripto(){
 } 
 
 function copiarTexto(){
-    let textoCopy= document.getElementById('copia').innerHTML;
+    let textoCopy= document.getElementById('copia').innerHTML
     navigator.clipboard.writeText(textoCopy)
-    alert('texto copiado')}
+    alert('texto copiado')
+    textInput.value = " "
+}

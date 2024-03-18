@@ -20,10 +20,12 @@ body{
     background-color: #242424;
     padding: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 2%;
     color: #fff;
     height: 85px;
+    
 
 
 }
@@ -36,11 +38,7 @@ body{
     
     
 }
- .cabecalho h1{
-    margin-right: 250px;
-    
 
-}
 .main__container .container__input{
     display: flex;
     justify-content: space-evenly;
@@ -137,12 +135,14 @@ body{
 
 @media screen and (max-width: 768px) {
     .main__container{
-        display: block;
+        display: flex;
+        
     }
     .main__container .container__input #output img{
         border-radius: 20px;
-        width: 100px;
-        height: 75px;
+        width: 50%;
+        height: 50%;
+        
         padding-bottom: 2px;}
 
         #copia{
@@ -184,7 +184,10 @@ body{
             justify-content: center;
             align-items: center;
             color: #fff;
-            height: 50px; }  
+            height: 50px;
+            width: 100%;
+        margin-top: 0; }
+              
         .cabecalho h1{
             margin-right: 20px;  
 }
@@ -192,15 +195,17 @@ body{
 
     
     margin: 0;
+    align-items: center;
 
 }
 .main__container .container__input{
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 80%;
     height: 70%;
-    padding: 5px;
-    margin-left: 20px;
+    
     
 }
     .input , .main__container .container__input #output{
